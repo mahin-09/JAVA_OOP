@@ -12,6 +12,10 @@ double volume(double radius){
     this.radius=radius;
     return (4.0/3.0)*Math.PI*radius*radius*radius;
 }
+double circlearea(double radius){
+    this.radius=radius;
+    return Math.PI*radius*radius;
+}
   
 }
 
@@ -31,6 +35,12 @@ public class prac1
      double radius=input.nextDouble();
      double volume=obj1.volume(radius);
      System.out.println("Volume: "+volume);
+        System.out.println("Enter the circle radius");
+        double radius2=input.nextDouble();
+        double cirarea=obj1.circlearea(radius2);
+        System.out.println("area of circle: "+cirarea);
+        
+
 
     }
 }
