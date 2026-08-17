@@ -16,6 +16,9 @@ double circlearea(double radius){
     this.radius=radius;
     return Math.PI*radius*radius;
 }
+double CtoF(double celcius){
+    return ((celcius/5)*9)+32;
+}
   
 }
 
@@ -39,7 +42,12 @@ public class prac1
         double radius2=input.nextDouble();
         double cirarea=obj1.circlearea(radius2);
         System.out.println("area of circle: "+cirarea);
-        
+
+        System.out.println("Enter celcius");
+        double celcius=input.nextDouble();
+        double fahrenheit=obj1.CtoF(celcius);
+        System.out.println("Celcius to Fahrenheit: "+fahrenheit);
+
 
 
     }
