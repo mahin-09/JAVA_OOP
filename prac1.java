@@ -47,6 +47,7 @@ public class prac1
         double celcius=input.nextDouble();
         double fahrenheit=obj1.CtoF(celcius);
         System.out.println("Celcius to Fahrenheit: "+fahrenheit);
+        input.close();
 
 
 
